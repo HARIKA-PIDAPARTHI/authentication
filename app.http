@@ -1,0 +1,143 @@
+POST https://harikau8aqonjscpfvwof.drops.nxtwave.tech/register/
+Content-Type:application/json
+
+{
+  "username": "adam_richard",
+  "name": "Adam Richard",
+  "password": "richard_567",
+  "gender": "male",
+  "location": "Detroit"
+}
+
+
+
+POST https://harikau8aqonjscpfvwof.drops.nxtwave.tech/login/
+Content-Type:application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567"
+}
+
+POST https://harikau8aqonjscpfvwof.drops.nxtwave.tech/login/
+Content-Type:application/json
+
+{
+  "username": "adam",
+  "password": "rich"
+}
+
+POST https://harikau8aqonjscpfvwof.drops.nxtwave.tech/login/
+Content-Type:application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard@123"
+}
+
+
+
+
+PUT https://harikau8aqonjscpfvwof.drops.nxtwave.tech/change-password
+Content-Type:application/json
+
+{
+  "username": "adam_richard",
+  "oldPassword": "richard_567",
+  "newPassword": "richard@123"
+}
+
+PUT https://harikau8aqonjscpfvwof.drops.nxtwave.tech/change-password
+Content-Type:application/json
+
+{
+  "username": "adam_richard",
+  "oldPassword": "richard_567",
+  "newPassword": "rich"
+}
+
+PUT https://harikau8aqonjscpfvwof.drops.nxtwave.tech/change-password
+Content-Type:application/json
+
+{
+  "username": "adam_richard",
+  "oldPassword": "richard",
+  "newPassword": "richard@123"
+}
+
+
+
+
+
+
+
+
+
+
+POST https://harikau8aqonjscpfvwof.drops.nxtwave.tech/register/
+Content-Type:application/json
+
+{
+  "username": "harika_pidaparthi",
+  "name": "Harika Pidaparthi",
+  "password": "harika_08",
+  "gender": "female",
+  "location": "Detroit"
+}
+
+
+
+POST https://harikau8aqonjscpfvwof.drops.nxtwave.tech/login/
+Content-Type:application/json
+
+{
+  "username": "harika_pidaparthi",
+  "password": "harika_08"
+}
+
+POST https://harikau8aqonjscpfvwof.drops.nxtwave.tech/login/
+Content-Type:application/json
+
+{
+  "username": "harika",
+  "password": "harika_08"
+}
+
+POST https://harikau8aqonjscpfvwof.drops.nxtwave.tech/login/
+Content-Type:application/json
+
+{
+  "username": "harika_pidaparthi",
+  "password": "harika"
+}
+
+
+
+
+
+PUT https://harikau8aqonjscpfvwof.drops.nxtwave.tech/change-password
+Content-Type:application/json
+
+{
+  "username": "harika_pidaparthi",
+  "oldPassword": "harika_08",
+  "newPassword": "rich"
+}
+
+PUT https://harikau8aqonjscpfvwof.drops.nxtwave.tech/change-password
+Content-Type:application/json
+
+{
+  "username": "harika_pidaparthi",
+  "oldPassword": "richard",
+  "newPassword": "harika@08"
+}
+
+PUT https://harikau8aqonjscpfvwof.drops.nxtwave.tech/change-password
+Content-Type:application/json
+
+{
+  "username": "harika_pidaparthi",
+  "oldPassword": "harika_08",
+  "newPassword": "harika@08"
+}
