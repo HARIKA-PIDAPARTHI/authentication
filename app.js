@@ -42,7 +42,7 @@ app.post('/register', async (request, response) => {
     response.send('Password is too short')
   } else {
     if (user === undefined) {
-      let hashedpassword = bcrypt.hash(request.body.password, 10)
+      let hashedpassword = await bcrypt.hash(request.body.password, 10)
       let query2 = `INSERT INTO user(username,name,password,gender,location) VALUES ('${username}','${name}','${hashedpassword}','${gender}','${location}');`
       let result = await database.run(query2)
       response.send('User created successfully')
@@ -61,9 +61,9 @@ app.post('/login/', async (request, response) => {
     let match = await bcrypt.compare(password, user.password)
     if (match === true) {
       response.status(200)
-      response.send('Login successs!')
+      response.send('Login success!')
     } else {
-      response.status(200)
+      response.status(400)
       response.send('Invalid password')
     }
   }
